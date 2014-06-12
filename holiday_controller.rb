@@ -20,8 +20,9 @@ class HolidayController
 	end
 
 	def thomas_birthday
-		date1 = Date.new
-		components = Date.diff(date1, Date.parse("2015-01-9"))
+		date1 = Time.new
+		components = Date.diff(date1, Time.parse("2015-01-9"))
+		components[:difference]
 	end
 end
 
