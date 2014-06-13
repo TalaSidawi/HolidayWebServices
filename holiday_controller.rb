@@ -1,3 +1,5 @@
+require "date_diff"
+
 class HolidayController
 	def summer_solstice
 		date1 = Time.new
@@ -24,6 +26,13 @@ class HolidayController
 		components = Date.diff(date1, Time.parse("2015-01-9"))
 		components[:difference]
 	end
-end
 
+	def leap_year
+		if DateTime.now.leap?
+			"You betcha!"
+		else
+			"Maybe next year!"
+		end
+	end
+end
 
