@@ -31,7 +31,7 @@ class HolidayController
 		if DateTime.now.leap?
 			"You betcha!"
 		else
-			"Maybe next year!"
+			"No. Maybe next year!"
 		end
 	end
 end
