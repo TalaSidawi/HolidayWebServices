@@ -2,6 +2,8 @@ require "sinatra"
 require "date"
 require "time"
 require "./holiday_controller.rb"
+require "erb"
+require "tilt"
 
 controller = HolidayController.new
 
@@ -24,8 +26,15 @@ end
 
 get "/howmanydaysuntilthomasbirthday" do
 	controller.thomas_birthday
+	# _template
 end
 
 get "/isitaleapyear" do 
 	controller.leap_year
+end
+
+get "/hi/:name" do 
+	@name = params[:name]
+	template = Tilt::ERBTemplate.new('foo.erb')
+	template.render {@name}
 end

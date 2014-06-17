@@ -21,6 +21,12 @@ class HolidayController
 		end
 	end
 
+	# def thomas_birthday_template
+	# 	template = Tilt::ERBTemplate.new('foo.erb')
+	# 	template.render
+	# 	holiday_controller.thomas_birthday 
+	# end
+
 	def thomas_birthday
 		date1 = Time.new
 		components = Date.diff(date1, Time.parse("2015-01-9"))
