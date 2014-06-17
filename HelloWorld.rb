@@ -8,7 +8,11 @@ require "tilt"
 controller = HolidayController.new
 
 get "/hello" do 
-	"herro"
+	if File.exist?("C:/Users/tsidawi/Downloads/ptx.jpg")
+		"yes"
+	else
+		"no"
+	end
 end
 
 get "/date" do
