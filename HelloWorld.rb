@@ -7,17 +7,10 @@ require "tilt"
 
 controller = HolidayController.new
 
-get "/hello" do 
-	if File.exist?("C:/Users/tsidawi/Downloads/ptx.jpg")
-		"yes"
-	else
-		"no"
-	end
-end
-
 get "/date" do
 	time1 = Time.new
-	"The date and time is : " + time1.inspect
+	template = Tilt::ERBTemplate.new('date.erb')
+	template.render {time1}
 end
 
 get "/isitsummersolsticeyet" do 
