@@ -1,18 +1,9 @@
-/*body {
-	background-color: #00FA9A;
-	color: purple;
+body{
+	color: white;
 	text-align: center;
 	font-size: 200px;
-	font-family: Papyrus;
-}
-background-color: #6495ed;
-background-color: #00FA9A;
-background-image: url("C:/Users/tsidawi/Downloads/ptx.jpg")*/
-body{
-		color: white;
-		text-align: center;
-		font-size: 200px;
-		font-family: Comic Sans MS;
-		background-image: url(http://31.media.tumblr.com/7f33fea3fe291f9d89a957e93411e72c/tumblr_n43kh1NHgH1tpnhx7o1_1280.jpg);
-		vertical-text-align: center;
+	font-family: Comic Sans MS;
+	background-image: url(http://31.media.tumblr.com/7f33fea3fe291f9d89a957e93411e72c/tumblr_n43kh1NHgH1tpnhx7o1_1280.jpg);
 	}
+
+
