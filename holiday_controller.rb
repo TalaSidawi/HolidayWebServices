@@ -5,9 +5,11 @@ class HolidayController
 		date1 = Time.new
 		date2 = Time.parse("2014-06-21")
 		if date1.to_date === date2.to_date
-			"YES."
+			template = Tilt::ERBTemplate.new('summersolstice.erb')
+			template.render {"YES."}
 		else 
-			"NO."
+			template = Tilt::ERBTemplate.new('summersolsticeno.erb')
+			template.render {"NO."}
 		end
 	end
 
