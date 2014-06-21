@@ -9,7 +9,7 @@ controller = HolidayController.new
 
 get "/date" do
 	time1 = Time.new
-	template = Tilt::ERBTemplate.new('date.erb')
+	template = Tilt::ERBTemplate.new('erb/date.erb')
 	template.render {time1}
 end
 
@@ -23,7 +23,6 @@ end
 
 get "/howmanydaysuntilthomasbirthday" do
 	controller.thomas_birthday
-	# _template
 end
 
 get "/isitaleapyear" do 
